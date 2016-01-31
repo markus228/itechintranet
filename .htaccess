@@ -1,0 +1,11 @@
+# URl Rewriting
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^([a-zA-Z0-9]*)/([a-zA-Z0-9]*).*$ index.php?controller=$1&action=$2 [NC,L]
+RewriteRule ^([a-zA-Z0-9]*).*$ index.php?controller=$1 [NC,L]

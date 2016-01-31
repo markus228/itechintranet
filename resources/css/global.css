@@ -1,0 +1,27 @@
+.label-as-badge {
+    border-radius: 1em;
+}
+
+.no-transition {
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: height 0.01s;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+
+.white-bg{
+    background:#ffffff !important;
+}
+
+
+.some_selected {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
