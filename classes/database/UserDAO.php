@@ -37,6 +37,17 @@ class UserDAO implements Authenticator
     }
 
     /**
+     * Gibt alle User zurück
+     * @return User[]
+     */
+    public function getAllUsers() {
+        $results = $this->database
+            ->fetchRowMany("SELECT * FROM users WHERE 1");
+
+        return $this->userSetParser($results);
+    }
+
+    /**
      * @param $username
      * @return User
      */

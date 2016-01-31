@@ -186,6 +186,24 @@ class User
         return $this;
     }
 
+    /**
+     * Returns an array containing all information of this User object.
+     * @return array
+     */
+    public function toArray() {
+        return array(
+            "id" => $this->getId(),
+            "username" => $this->getUsername(),
+            "vorname" => $this->getVorname(),
+            "nachname" => $this->getNachname(),
+            "anschrift" => $this->getAnschrift(),
+            "telefonDurchwahl" => $this->getTelefonDurchwahl(),
+            "telefonPrivat" => $this->getTelefonPrivat(),
+            "telefonMobil" => $this->getTelefonMobil()
+        );
+
+    }
+
 
 
 

@@ -11,7 +11,7 @@ namespace controller;
 use controller\Controller;
 
 /**
- * The UnknownController is called when there was no match for a Controller in the Controller name space matching the client's request.
+ * The UnknownController is called when there was no match for a Controller in the Controller name space.
  *
  * Class UnknownController
  * @package controller
