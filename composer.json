@@ -13,20 +13,7 @@
           "reference": "master"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "rmm5t/jquery-timeago",
-        "version": "dev-master",
-        "source": {
-          "url": "https://github.com/rmm5t/jquery-timeago.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
     }
-
   ],
 
   "require": {
